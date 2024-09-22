@@ -1,5 +1,5 @@
 # Civil War Game
-A Civil War game based off of the [DOS Civil War Strategy](classicreload.com/civil-war-strategy.html) game
+A Civil War game based off of the [DOS Civil War Strategy](https://classicreload.com/civil-war-strategy.html) game
 
 **How to play:**
 1. **Start the server:** Run the `server.py` script.
@@ -12,6 +12,6 @@ A Civil War game based off of the [DOS Civil War Strategy](classicreload.com/civ
 * PyGame
 
 **Additional resources:**
-* [Python Docs](docs.python.org/3/)
-* [Sockets](docs.python.org/3/howto/sockets.html)
-* [Pygame Docs](www.pygame.org/docs/)
+* [Python Docs](https://docs.python.org/3/)
+* [Sockets](https://docs.python.org/3/howto/sockets.html)
+* [Pygame Docs](https://www.pygame.org/docs/)
