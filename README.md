@@ -1,4 +1,4 @@
-# cw-game
+# Civil War Game
 A Civil War game based off of the [DOS Civil War Strategy](classicreload.com/civil-war-strategy.html) game
 
 **How to play:**
