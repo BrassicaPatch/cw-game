@@ -63,7 +63,11 @@ The goal is to recreate the DOS Civil War Strategy game with modern technology. 
 
 ## Timeline
 **Key Milestones:**
-* Create Full Client Prototype
+* Create Full Client Prototype\
+..* dsfsd
+  asfdsd
+  sdfsdf
+  dsffds
 ..* Finish Map (Citiy Placements, Connections, Population and Income Values)
 ..* Create working UI with functioning actions
 ..* Add Armies, with General assignments, and setup starting positions
