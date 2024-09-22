@@ -21,17 +21,17 @@ A Civil War game based off of the [DOS Civil War Strategy](https://classicreload
 
 # SOW
 
-**Project Title**
+## Project Title
 Civil War Game
 
-**Team**
+## Team
 Chris Pierce
 
-**Project Objective**
+## Project Objective
 The goal is to recreate the DOS Civil War Strategy game with modern technology. It is a simple and fun game to play, but is limited by the original technology it was created with, and has potential for expansion.
 
-**Scope**
-Inclusions:
+## Scope
+**Inclusions:**
 * A set start state of the map
 * Simultaneous turns of play
 * Groups of units that can move between cities, conducting battle and capturing them
@@ -48,7 +48,7 @@ Inclusions:
 * Original Keyboard and new mouse functionality for menu options
 * Server-based game data management
 
-Exclusions:
+**Exclusions:**
 * Random events as done in the first game
 * Random starting scenarios
 * Ability to create/build forts
@@ -56,13 +56,13 @@ Exclusions:
 * Exclusion of actions for certain sides
 * AI and Difficulty Settings
 
-**Deliverables**
+## Deliverables
 * Civil War Game Client 
 * Civil War Game Server
 * Game Documentation / Manual
 
-**Timeline**
-Key Milestones:
+## Timeline
+**Key Milestones:**
 * Create Full Client Prototype
 ..* Finish Map (Citiy Placements, Connections, Population and Income Values)
 ..* Create working UI with functioning actions
@@ -73,21 +73,21 @@ Key Milestones:
 ..* Railroad ability and pathfinding check
 ..* (QOL) Add resolution options, as well as audio and sound effects
 
-Task Breakdown:
+**Task Breakdown:**
 
-**Technical Requirements**
-Hardware:
-Software:
+## Technical Requirements
+**Hardware:**
+**Software:**
 
-**Assumptions**
+## Assumptions
  
-**Roles and Responsibilities**
+## Roles and Responsibilities 
 Chris: Everything :)
 
-**Communication Plan**
+## Communication Plan
 Its all in my head
 
-**Additional Notes**
+## Additional Notes
 *Thoughtfully written additional notes*
 
 
