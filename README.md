@@ -22,7 +22,7 @@ I made a quick mockup of the simple setup/UI of the game, with imported JSON dat
 
 The screenshot below shows the mockup, which was made in just an hour or so to bring the concept to life and show it off.
 
-[Capture](/Resources/Capture.png)
+[Capture](/Resources/Capture.PNG)
 
 
 
