@@ -18,6 +18,13 @@ A Civil War game based off of the [DOS Civil War Strategy](https://classicreload
 
 # Proof of Concept
 
+I made a quick mockup of the simple setup/UI of the game, with imported JSON data for cities and their locations, all in PyGame, to prove the concept of the game and show how it will be realistically developed and expanded upon. Graphical quality is not a high priority, and we settle for the minimum viable product. If in later stages development time allows, I would love to go back through and expand on the quality of life of this project.
+
+The screenshot below shows the mockup, which was made in just an hour or so to bring the concept to life and show it off.
+
+[/Resources/Capture.png]
+
+
 
 # SOW
 
@@ -86,6 +93,7 @@ The goal is to recreate the DOS Civil War Strategy game with modern technology. 
 ## Technical Requirements
 **Hardware:**
 * Hardware limitations should be pretty bare bones. Likely two devices needed. One host machine could run server and a local client and the other can be the second client/player.
+
 **Software:**
 * VSCode is being used as the programming IDE for this project
 * Python 3.12.2 is being used
