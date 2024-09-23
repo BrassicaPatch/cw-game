@@ -63,23 +63,39 @@ The goal is to recreate the DOS Civil War Strategy game with modern technology. 
 
 ## Timeline
 **Key Milestones:**
-* Create Full Client Prototype
-  * Finish Map (Citiy Placements, Connections, Population and Income Values)
-  * Create working UI with functioning actions
-  * Add Armies, with General assignments, and setup starting positions
-  * Add Navies
-  * Create Win Conditions and checks for them
-  * Create some kind of info menu as existed in first game
-  * Railroad ability and pathfinding check
-  * (QOL) Add resolution options, as well as audio and sound effects
+* Create Full Client Prototype - Oct 11th
+* Create Full Server Prototype - Nov 1st
+* Finalize all TCP/Multiplayer Connections - Nov 30th
 
 **Task Breakdown:**
+* Client:
+  * Finish Map (Citiy Placements, Connections, Population and Income Values) - 1 hour
+  * Create working UI with functioning actions - 3 hours
+  * Add Armies, with General assignments, and setup starting positions - 3 hours
+  * Add Navies - 3 hours
+  * Create Win Conditions and checks for them - 2 hours
+  * Create some kind of info menu as existed in first game - 2 hours
+  * Railroad ability and pathfinding check - 2 hours
+  * (QOL) Add resolution options, as well as audio and sound effects - 2 hours
+* Server:
+  * Create sudo-game client to store game-data for clients - 5 hours
+  * Create connection system for clients to connect to server - 6 hours
+  * Run game turns, and facilitate data transfer between clients - 4 hours
+  * (QOL) Create a save game system? - 8 hours
 
 ## Technical Requirements
 **Hardware:**
+* Hardware limitations should be pretty bare bones. Likely two devices needed. One host machine could run server and a local client and the other can be the second client/player.
 **Software:**
+* VSCode is being used as the programming IDE for this project
+* Python 3.12.2 is being used
+* Socket, Threading, and PyGame are all being used
+* Everything will be coded and tested on Windows
 
 ## Assumptions
+* Stable Network Connection - It will be assumed that both clients and server will have stable connections and will not drop out or be lost during gameplay.
+* Synchronized Game State - It will be assumed that no client is trying to manipulate the game state, and that everything the client sends to the server is legitimate for the sake of keeping the game state syncronized
+* Security - Again it will be assumed that each client is acting with good intent with the server, and thus there will be minimal security measures taken
  
 ## Roles and Responsibilities 
 Chris: Everything :)
