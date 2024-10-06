@@ -1,0 +1,298 @@
+# Rebuilding the full cities list and saving in JSON once more from start
+cities_list = [
+    {"name": "Washington DC", "position": {"x": 2569, "y": 894}, "population": 75000, "income": 5000, "side": "Union"},
+
+    # Arkansas
+    {"name": "Jonesboro", "position": {"x": 1508, "y": 1334}, "population": 4500, "income": 1200, "side": "Confederacy"},
+    {"name": "Batesville", "position": {"x": 1436, "y": 1352}, "population": 3500, "income": 1000, "side": "Confederacy"},
+    {"name": "Arkadelphia", "position": {"x": 1260, "y": 1522}, "population": 3000, "income": 900, "side": "Confederacy"},
+    {"name": "Camden", "position": {"x": 1284, "y": 1594}, "population": 5000, "income": 1100, "side": "Confederacy"},
+    {"name": "Fayetteville", "position": {"x": 1214, "y": 1340}, "population": 8000, "income": 1400, "side": "Confederacy"},
+    {"name": "Fort Smith", "position": {"x": 1190, "y": 1392}, "population": 6000, "income": 1200, "side": "Confederacy"},
+    {"name": "Little Rock", "position": {"x": 1365, "y": 1462}, "population": 12000, "income": 2000, "side": "Confederacy"},
+    {"name": "Fort Hindman", "position": {"x": 1440, "y": 1544}, "population": 1500, "income": 600, "side": "Confederacy"},
+    {"name": "Helena", "position": {"x": 1498, "y": 1498}, "population": 4000, "income": 1000, "side": "Union"},
+    
+    # Missouri
+    {"name": "West Plains", "position": {"x": 1404, "y": 1262}, "population": 2500, "income": 800, "side": "Union"},
+    {"name": "New Madrid", "position": {"x": 1582, "y": 1274}, "population": 4500, "income": 1200, "side": "Union"},
+    {"name": "Kirksville", "position": {"x": 1338, "y": 894}, "population": 3000, "income": 900, "side": "Union"},
+    {"name": "Neosho", "position": {"x": 1195, "y": 1256}, "population": 3500, "income": 950, "side": "Confederacy"},
+    {"name": "Springfield MO", "position": {"x": 1275, "y": 1220}, "population": 7000, "income": 1500, "side": "Union"},
+    {"name": "Lexington MO", "position": {"x": 1226, "y": 1016}, "population": 5000, "income": 1200, "side": "Confederacy"},
+    {"name": "Kansas City", "position": {"x": 1180, "y": 1024}, "population": 15000, "income": 2500, "side": "Union"},
+    {"name": "Jefferson City", "position": {"x": 1370, "y": 1088}, "population": 10000, "income": 1800, "side": "Union"},
+    {"name": "Farmington", "position": {"x": 1492, "y": 1132}, "population": 3000, "income": 850, "side": "Confederacy"},
+    {"name": "Cape Girardeau", "position": {"x": 1568, "y": 1155}, "population": 5000, "income": 1300, "side": "Union"},
+    {"name": "St. Louis", "position": {"x": 1520, "y": 1058}, "population": 160000, "income": 4500, "side": "Union"},
+    
+    # Illinois
+    {"name": "Olney", "position": {"x": 1698, "y": 1045}, "population": 5000, "income": 1400, "side": "Union"},
+    {"name": "Danville", "position": {"x": 1670, "y": 860}, "population": 6000, "income": 1600, "side": "Union"},
+    {"name": "Decatur", "position": {"x": 1580, "y": 900}, "population": 7000, "income": 1500, "side": "Union"},
+    {"name": "Quincy", "position": {"x": 1425, "y": 905}, "population": 8000, "income": 2000, "side": "Union"},
+    {"name": "Cairo", "position": {"x": 1612, "y": 1208}, "population": 4000, "income": 1300, "side": "Union"},
+    {"name": "Alton", "position": {"x": 1510, "y": 1018}, "population": 11000, "income": 1800, "side": "Union"},
+    {"name": "Springfield IL", "position": {"x": 1528, "y": 916}, "population": 14000, "income": 2200, "side": "Union"},
+    {"name": "Chicago", "position": {"x": 1694, "y": 715}, "population": 112000, "income": 4000, "side": "Union"},
+    
+    #Iowa
+    {"name": "Fort Dodge", "position": {"x": 1190, "y": 662}, "population": 4500, "income": 1200, "side": "Union"},
+    {"name": "Mason City", "position": {"x": 1236, "y": 592}, "population": 3500, "income": 1000, "side": "Union"},
+    {"name": "Keokuk", "position": {"x": 1416, "y": 862}, "population": 9000, "income": 1600, "side": "Union"},
+    {"name": "Council Bluffs", "position": {"x": 1076, "y": 805}, "population": 5000, "income": 1500, "side": "Union"},
+    {"name": "Davenport", "position": {"x": 1478, "y": 756}, "population": 11000, "income": 1800, "side": "Union"},
+    {"name": "Des Moines", "position": {"x": 1224, "y": 764}, "population": 9000, "income": 1700, "side": "Union"},
+    
+    # Minnesota
+    {"name": "Pipestone", "position": {"x": 1046, "y": 510}, "population": 2000, "income": 700, "side": "Union"},
+    {"name": "Alexandria MN", "position": {"x": 1078, "y": 310}, "population": 2500, "income": 800, "side": "Union"},
+    {"name": "Duluth", "position": {"x": 1342, "y": 206}, "population": 8000, "income": 1800, "side": "Union"},
+    {"name": "Mankato", "position": {"x": 1204, "y": 476}, "population": 5000, "income": 1300, "side": "Union"},
+    {"name": "Rochester", "position": {"x": 1284, "y": 492}, "population": 6500, "income": 1500, "side": "Union"},
+    {"name": "Winona", "position": {"x": 1362, "y": 480}, "population": 5500, "income": 1300, "side": "Union"},
+    {"name": "St Paul", "position": {"x": 1238, "y": 402}, "population": 10000, "income": 2200, "side": "Union"},
+    
+    # Wisconsin
+    {"name": "Superior", "position": {"x": 1355, "y": 236}, "population": 7000, "income": 1600, "side": "Union"},
+    {"name": "Eau Claire", "position": {"x": 1382, "y": 424}, "population": 6000, "income": 1400, "side": "Union"},
+    {"name": "La Crosse", "position": {"x": 1424, "y": 518}, "population": 8000, "income" : 1700, "side": "Union"},
+    {"name": "Prairie du Chien", "position": {"x": 1436, "y": 584}, "population": 5000, "income": 1300, "side": "Union"},
+    {"name": "Janesville", "position": {"x": 1582, "y": 626}, "population": 12000, "income": 1900, "side": "Union"},
+    {"name": "Milwaukee", "position": {"x": 1668, "y": 592}, "population": 31000, "income": 2500, "side": "Union"},
+    {"name": "Madison", "position": {"x": 1558, "y": 578}, "population": 15000, "income": 2200, "side": "Union"},
+    
+    #Tennessee
+    {"name": "Cookeville", "position": {"x": 1912, "y": 1292}, "population": 4500, "income": 1400, "side": "Confederacy"},
+    {"name": "Pulaski", "position": {"x": 1776, "y": 1396}, "population": 4000, "income": 1200, "side": "Confederacy"},
+    {"name": "Jackson TN", "position": {"x": 1650, "y": 1370}, "population": 7000, "income": 1800, "side": "Confederacy"},
+    {"name": "Franklin", "position": {"x": 1798, "y": 1338}, "population": 5500, "income": 1600, "side": "Confederacy"},
+    {"name": "Knoxville", "position": {"x": 2084, "y": 1286}, "population": 12000, "income": 2300, "side": "Confederacy"},
+    {"name": "Chattanooga", "position": {"x": 1952, "y": 1398}, "population": 13000, "income": 2400, "side": "Confederacy"},
+    {"name": "Memphis", "position": {"x": 1562, "y": 1410}, "population": 24000, "income": 2800, "side": "Confederacy"},
+    {"name": "Nashville", "position": {"x": 1816, "y": 1308}, "population": 25000, "income": 3000, "side": "Confederacy"},
+    
+    # Kentucky
+    {"name": "Barbourville", "position": {"x": 2065, "y": 1202}, "population": 3500, "income": 1200, "side": "Union"},
+    {"name": "Prestonburg", "position": {"x": 2123, "y": 1120}, "population": 4500, "income": 1300, "side": "Union"},
+    {"name": "Ashland", "position": {"x": 2132, "y": 1032}, "population": 6000, "income": 1600, "side": "Union"},
+    {"name": "Paducah", "position": {"x": 1666, "y": 1222}, "population": 8500, "income": 1900, "side": "Union"},
+    {"name": "Frankfort", "position": {"x": 1944, "y": 1086}, "population": 9000, "income": 2100, "side": "Union"},
+    {"name": "Bowling Green", "position": {"x": 1832, "y": 1218}, "population": 11000, "income": 2200, "side": "Union"},
+    {"name": "Lexington KY", "position": {"x": 1992, "y": 1100}, "population": 14000, "income": 2500, "side": "Union"},
+    {"name": "Louisville", "position": {"x": 1890, "y": 1090}, "population": 28000, "income": 3500, "side": "Union"},
+
+    # Indiana
+    {"name": "Fort Wayne", "position": {"x": 1896, "y": 746}, "population": 12000, "income": 2200, "side": "Union"},
+    {"name": "New Albany", "position": {"x": 1874, "y": 1068}, "population": 7000, "income": 1800, "side": "Union"},
+    {"name": "Evansville", "position": {"x": 1742, "y": 1110}, "population": 14000, "income": 2600, "side": "Union"},
+    {"name": "Indianapolis", "position": {"x": 1834, "y": 882}, "population": 35000, "income": 4000, "side": "Union"},
+
+    # Michigan
+    {"name": "Kalamazoo", "position": {"x": 1842, "y": 656}, "population": 11000, "income": 2400, "side": "Union"},
+    {"name": "Lansing", "position": {"x": 1926, "y": 604}, "population": 15000, "income": 2500, "side": "Union"},
+    {"name": "Grand Rapids", "position": {"x": 1826, "y": 572}, "population": 18000, "income": 2700, "side": "Union"},
+    {"name": "Detroit", "position": {"x": 2046, "y": 620}, "population": 45000, "income": 4800, "side": "Union"},
+    
+    # Ohio
+    {"name": "Marietta", "position": {"x": 2206, "y": 903}, "population": 8500, "income": 1800, "side": "Confederacy"},
+    {"name": "Dayton", "position": {"x": 1996, "y": 868}, "population": 14000, "income": 2500, "side": "Union"},
+    {"name": "Columbus OH", "position": {"x": 2064, "y": 832}, "population": 25000, "income": 3000, "side": "Union"},
+    {"name": "Cleveland", "position": {"x": 2160, "y": 696}, "population": 38000, "income": 3800, "side": "Union"},
+    {"name": "Cincinnati", "position": {"x": 1982, "y": 960}, "population": 31000, "income": 3500, "side": "Union"},
+    
+    # Pennsylvania
+    {"name": "Bradford", "position": {"x": 2388, "y": 618}, "population": 8000, "income": 1700, "side": "Union"},
+    {"name": "Scranton", "position": {"x": 2608, "y": 598}, "population": 12000, "income": 2400, "side": "Union"},
+    {"name": "Chambersburg", "position": {"x": 2476, "y": 780}, "population": 6000, "income": 1600, "side": "Union"},
+    {"name": "Pittsburgh", "position": {"x": 2300, "y": 784}, "population": 47000, "income": 4200, "side": "Union"},
+    {"name": "Harrisburg", "position": {"x": 2570, "y": 740}, "population": 18000, "income": 2600, "side": "Union"},
+    {"name": "Gettysburg", "position": {"x": 2538, "y": 792}, "population": 5000, "income": 1300, "side": "Union"},
+    {"name": "Philadelphia", "position": {"x": 2694, "y": 746}, "population": 80000, "income": 6000, "side": "Union"},
+    
+    # New York
+    {"name": "Elmira", "position": {"x": 2478, "y": 572}, "population": 7000, "income": 1700, "side": "Union"},
+    {"name": "Binghamton", "position": {"x": 2580, "y": 540}, "population": 8000, "income": 1800, "side": "Union"},
+    {"name": "Poughkeepsie", "position": {"x": 2728, "y": 542}, "population": 9000, "income": 1900, "side": "Union"},
+    {"name": "Buffalo", "position": {"x": 2355, "y": 520}, "population": 30000, "income": 3500, "side": "Union"},
+    {"name": "Albany NY", "position": {"x": 2722, "y": 442}, "population": 24000, "income": 3200, "side": "Union"},
+    {"name": "New York City", "position": {"x": 2778, "y": 620}, "population": 150000, "income": 10000, "side": "Union"},
+
+    # Maine 
+    {"name": "Augusta", "position": {"x": 2982, "y": 182}, "population": 7000, "income": 1800, "side": "Union"},
+    {"name": "Portland", "position": {"x": 2958, "y": 266}, "population": 12000, "income": 2500, "side": "Union"},
+
+    # New Hampshire
+    {"name": "Portsmouth", "position": {"x": 2934, "y": 348}, "population": 6000, "income": 1600, "side": "Union"},
+    {"name": "Concord", "position": {"x": 2875, "y": 332}, "population": 8000, "income": 1900, "side": "Union"},
+
+    # Vermont
+    {"name": "Brattleboro", "position": {"x": 2805, "y": 390}, "population": 5000, "income": 1300, "side": "Union"},
+    {"name": "Montpelier", "position": {"x": 2766, "y": 248}, "population": 4000, "income": 1200, "side": "Union"},
+
+    # Massachusetts
+    {"name": "Pittsfield", "position": {"x": 2778, "y": 450}, "population": 11000, "income": 2000, "side": "Union"},
+    {"name": "New Bedford", "position": {"x": 2982, "y": 490}, "population": 20000, "income": 2800, "side": "Union"},
+    {"name": "Lowell", "position": {"x": 2908, "y": 400}, "population": 18000, "income": 2500, "side": "Union"},
+    {"name": "Springfield MA", "position": {"x": 2842, "y": 472}, "population": 15000, "income": 2400, "side": "Union"},
+    {"name": "Boston", "position": {"x": 2945, "y": 424}, "population": 55000, "income": 4800, "side": "Union"},
+
+    # Rhode Island
+    {"name": "Providence", "position": {"x": 2928, "y": 486}, "population": 30000, "income": 3500, "side": "Union"},
+
+    # Connecticut
+    {"name": "Bridgeport", "position": {"x": 2808, "y": 598}, "population": 22000, "income": 3000, "side": "Union"},
+    {"name": "New Haven", "position": {"x": 2832, "y": 568}, "population": 26000, "income": 3200, "side": "Union"},
+    {"name": "Hartford", "position": {"x": 2840, "y": 522}, "population": 20000, "income": 2900, "side": "Union"},
+
+    # New Jersey
+    {"name": "Millville", "position": {"x": 2714, "y": 806}, "population": 8000, "income": 1600, "side": "Union"},
+    {"name": "Newark", "position": {"x": 2758, "y": 652}, "population": 35000, "income": 3700, "side": "Union"},
+    {"name": "Trenton", "position": {"x": 2718, "y": 710}, "population": 18000, "income": 2800, "side": "Union"},
+
+    # Delaware 
+    {"name": "Dover", "position": {"x": 2695, "y": 848}, "population": 9000, "income": 1800, "side": "Union"},
+    {"name": "Wilmington DE", "position": {"x": 2666, "y": 785}, "population": 16000, "income": 2700, "side": "Union"},
+
+    # Maryland
+    {"name": "Easton", "position": {"x": 2658, "y": 904}, "population": 4000, "income": 1200, "side": "Union"},
+    {"name": "Leonardtown", "position": {"x": 2606, "y": 940}, "population": 4500, "income": 1300, "side": "Union"},
+    {"name": "Hagerstown", "position": {"x": 2450, "y": 830}, "population": 6000, "income": 1700, "side": "Union"},
+    {"name": "Frederick", "position": {"x": 2535, "y": 842}, "population": 12000, "income": 2300, "side": "Union"},
+    {"name": "Baltimore", "position": {"x": 2608, "y": 850}, "population": 65000, "income": 5000, "side": "Union"},
+
+    # West Virginia
+    {"name": "Sutton", "position": {"x": 2288, "y": 965}, "population": 3500, "income": 1100, "side": "Union"},
+    {"name": "Lewisburg", "position": {"x": 2290, "y": 1086}, "population": 4500, "income": 1300, "side": "Union"},
+    {"name": "Charleston WV", "position": {"x": 2202, "y": 1024}, "population": 9000, "income": 2000, "side": "Union"},
+    {"name": "Clarksburg", "position": {"x": 2300, "y": 900}, "population": 5000, "income": 1400, "side": "Union"},
+    {"name": "Wheeling", "position": {"x": 2264, "y": 832}, "population": 11000, "income": 2400, "side": "Union"},
+    {"name": "Harpers Ferry", "position": {"x": 2498, "y": 858}, "population": 4000, "income": 1200, "side": "Union"},
+    
+    # Virginia
+    {"name": "Danville", "position": {"x": 2410, "y": 1154}, "population": 10000, "income": 2500, "side": "Confederacy"},
+    {"name": "Abingdon", "position": {"x": 2202, "y": 1182}, "population": 4500, "income": 1400, "side": "Confederacy"},
+    {"name": "Lynchburg", "position": {"x": 2416, "y": 1084}, "population": 12000, "income": 2600, "side": "Confederacy"},
+    {"name": "Staunton", "position": {"x": 2426, "y": 996}, "population": 8000, "income": 1800, "side": "Confederacy"},
+    {"name": "Winchester", "position": {"x": 2476, "y": 888}, "population": 10000, "income": 2000, "side": "Confederacy"},
+    {"name": "Charlottesville", "position": {"x": 2480, "y": 1010}, "population": 15000, "income": 2800, "side": "Confederacy"},
+    {"name": "Lexington VA", "position": {"x": 2390, "y": 1062}, "population": 4000, "income": 1300, "side": "Confederacy"},
+    {"name": "Manassas", "position": {"x": 2530, "y": 908}, "population": 5000, "income": 1500, "side": "Confederacy"},
+    {"name": "Wytheville", "position": {"x": 2276, "y": 1148}, "population": 6000, "income": 1600, "side": "Confederacy"},
+    {"name": "Norfolk", "position": {"x": 2680, "y": 1084}, "population": 32000, "income": 3500, "side": "Confederacy"},
+    {"name": "Fredericksburg", "position": {"x": 2535, "y": 956}, "population": 11000, "income": 2100, "side": "Confederacy"},
+    {"name": "Petersburg", "position": {"x": 2576, "y": 1055}, "population": 28000, "income": 3000, "side": "Confederacy"},
+    {"name": "Richmond", "position": {"x": 2552, "y": 1025}, "population": 70000, "income": 5000, "side": "Confederacy"},
+
+    # North Carolina
+    {"name": "Lumberton", "position": {"x": 2512, "y": 1370}, "population": 5000, "income": 1400, "side": "Confederacy"},
+    {"name": "Asheville", "position": {"x": 2176, "y": 1314}, "population": 10000, "income": 2000, "side": "Confederacy"},
+    {"name": "Shelby", "position": {"x": 2242, "y": 1322}, "population": 4000, "income": 1200, "side": "Confederacy"},
+    {"name": "Henderson", "position": {"x": 2504, "y": 1178}, "population": 6000, "income": 1500, "side": "Confederacy"},
+    {"name": "Tarboro", "position": {"x": 2578, "y": 1202}, "population": 7000, "income": 1600, "side": "Confederacy"},
+    {"name": "Weldon", "position": {"x": 2566, "y": 1150}, "population": 8000, "income": 1700, "side": "Confederacy"},
+    {"name": "Salisbury", "position": {"x": 2348, "y": 1298}, "population": 9000, "income": 1900, "side": "Confederacy"},
+    {"name": "Hickory", "position": {"x": 2278, "y": 1288}, "population": 5000, "income": 1400, "side": "Confederacy"},
+    {"name": "Kinston", "position": {"x": 2590, "y": 1268}, "population": 7500, "income": 1600, "side": "Confederacy"},
+    {"name": "Elizabeth City", "position": {"x": 2706, "y": 1155}, "population": 4000, "income": 1200, "side": "Confederacy"},
+    {"name": "Murphy", "position": {"x": 2052, "y": 1384}, "population": 2000, "income": 800, "side": "Confederacy"},
+    {"name": "Goldsboro", "position": {"x": 2556, "y": 1260}, "population": 6000, "income": 1500, "side": "Confederacy"},
+    {"name": "Greensboro", "position": {"x": 2378, "y": 1212}, "population": 13000, "income": 2300, "side": "Confederacy"},
+    {"name": "Charlotte", "position": {"x": 2328, "y": 1344}, "population": 15000, "income": 2500, "side": "Confederacy"},
+    {"name": "New Bern", "position": {"x": 2676, "y": 1282}, "population": 10000, "income": 2100, "side": "Confederacy"},
+    {"name": "Wilmington NC", "position": {"x": 2602, "y": 1398}, "population": 25000, "income": 3000, "side": "Confederacy"},
+    {"name": "Fayetteville", "position": {"x": 2470, "y": 1296}, "population": 12000, "income": 2200, "side": "Confederacy"},
+    {"name": "Raleigh", "position": {"x": 2488, "y": 1220}, "population": 17000, "income": 2800, "side": "Confederacy"},
+
+    # South Carolina
+    {"name": "Georgetown", "position": {"x": 2492, "y": 1498}, "population": 5000, "income": 1500, "side": "Confederacy"},
+    {"name": "Camden", "position": {"x": 2360, "y": 1444}, "population": 8000, "income": 1700, "side": "Confederacy"},
+    {"name": "Aiken", "position": {"x": 2280, "y": 1518}, "population": 9000, "income": 1800, "side": "Confederacy"},
+    {"name": "Sumter", "position": {"x": 2378, "y": 1486}, "population": 6000, "income": 1600, "side": "Confederacy"},
+    {"name": "Orangeburg", "position": {"x": 2368, "y": 1522}, "population": 4000, "income": 1400, "side": "Confederacy"},
+    {"name": "Spartanburg", "position": {"x": 2262, "y": 1362}, "population": 10000, "income": 2100, "side": "Confederacy"},
+    {"name": "Greenville", "position": {"x": 2216, "y": 1382}, "population": 11000, "income": 2200, "side": "Confederacy"},
+    {"name": "Anderson", "position": {"x": 2180, "y": 1428}, "population": 7000, "income": 1700, "side": "Confederacy"},
+    {"name": "Cheraw", "position": {"x": 2408, "y": 1375}, "population": 3000, "income": 1200, "side": "Confederacy"},
+    {"name": "Florence", "position": {"x": 2432, "y": 1462}, "population": 4000, "income": 1300, "side": "Confederacy"},
+    {"name": "Beaufort", "position": {"x": 2378, "y": 1596}, "population": 10000, "income": 1800, "side": "Confederacy"},
+    {"name": "Columbia", "position": {"x": 2322, "y": 1480}, "population": 12000, "income": 2500, "side": "Confederacy"},
+    {"name": "Charleston SC", "position": {"x": 2460, "y": 1562}, "population": 30000, "income": 4000, "side": "Confederacy"},
+    
+    # Georgia
+    {"name": "Baxley", "position": {"x": 2242, "y": 1736}, "population": 3000, "income": 1200, "side": "Confederacy"},
+    {"name": "Statesboro", "position": {"x": 2264, "y": 1640}, "population": 5000, "income": 1500, "side": "Confederacy"},
+    {"name": "Thomasville", "position": {"x": 2146, "y": 1825}, "population": 6000, "income": 1600, "side": "Confederacy"},
+    {"name": "Albany GA", "position": {"x": 2105, "y": 1756}, "population": 10000, "income": 2000, "side": "Confederacy"},
+    {"name": "Griswoldville", "position": {"x": 2160, "y": 1558}, "population": 2000, "income": 900, "side": "Confederacy"},
+    {"name": "Kingston", "position": {"x": 1994, "y": 1474}, "population": 4000, "income": 1400, "side": "Confederacy"},
+    {"name": "Milledgeville", "position": {"x": 2148, "y": 1588}, "population": 7000, "income": 1700, "side": "Confederacy"},
+    {"name": "Dalton", "position": {"x": 1986, "y": 1418}, "population": 9000, "income": 1800, "side": "Confederacy"},
+    {"name": "Columbus GA", "position": {"x": 2020, "y": 1670}, "population": 15000, "income": 2500, "side": "Confederacy"},
+    {"name": "Macon", "position": {"x": 2112, "y": 1650}, "population": 17000, "income": 2800, "side": "Confederacy"},
+    {"name": "Augusta", "position": {"x": 2250, "y": 1534}, "population": 20000, "income": 3000, "side": "Confederacy"},
+    {"name": "Atlanta", "position": {"x": 2056, "y": 1516}, "population": 45000, "income": 5000, "side": "Confederacy"},
+    {"name": "Savannah", "position": {"x": 2358, "y": 1672}, "population": 35000, "income": 4000, "side": "Confederacy"},
+
+    # Florida
+    {"name": "Marianna", "position": {"x": 1994, "y": 1844}, "population": 4000, "income": 1300, "side": "Confederacy"},
+    {"name": "Gainesville", "position": {"x": 2268, "y": 1904}, "population": 5000, "income": 1500, "side": "Confederacy"},
+    {"name": "Cedar Key", "position": {"x": 2208, "y": 1972}, "population": 2500, "income": 1100, "side": "Confederacy"},
+    {"name": "St Augustine", "position": {"x": 2384, "y": 1934}, "population": 8000, "income": 2000, "side": "Confederacy"},
+    {"name": "Jacksonville", "position": {"x": 2332, "y": 1856}, "population": 10000, "income": 2200, "side": "Confederacy"},
+    {"name": "Tallahassee", "position": {"x": 2100, "y": 1866}, "population": 5000, "income": 1500, "side": "Confederacy"},
+    {"name": "Pensacola", "position": {"x": 1834, "y": 1880}, "population": 12000, "income": 2500, "side": "Confederacy"}
+
+    # Alabama
+    {"name": "Evergreen", "position": {"x": 1852, "y": 1792}, "population": 4000, "income": 1400, "side": "Confederacy"},
+    {"name": "Eufaula", "position": {"x": 1996, "y": 1732}, "population": 7000, "income": 1800, "side": "Confederacy"},
+    {"name": "Gadsden", "position": {"x": 1898, "y": 1492}, "population": 8000, "income": 1900, "side": "Confederacy"},
+    {"name": "Opelika", "position": {"x": 1960, "y": 1626}, "population": 9000, "income": 2000, "side": "Confederacy"},
+    {"name": "Demopolis", "position": {"x": 1758, "y": 1698}, "population": 6000, "income": 1600, "side": "Confederacy"},
+    {"name": "Talladega", "position": {"x": 1868, "y": 1568}, "population": 10000, "income": 2100, "side": "Confederacy"},
+    {"name": "Birmingham", "position": {"x": 1840, "y": 1552}, "population": 20000, "income": 2800, "side": "Confederacy"},
+    {"name": "Huntsville", "position": {"x": 1846, "y": 1448}, "population": 15000, "income": 2500, "side": "Confederacy"},
+    {"name": "Tuscaloosa", "position": {"x": 1768, "y": 1574}, "population": 12000, "income": 2400, "side": "Confederacy"},
+    {"name": "Selma", "position": {"x": 1832, "y": 1648}, "population": 14000, "income": 2200, "side": "Confederacy"},
+    {"name": "Montgomery", "position": {"x": 1880, "y": 1662}, "population": 28000, "income": 3000, "side": "Confederacy"},
+    {"name": "Mobile", "position": {"x": 1756, "y": 1862}, "population": 30000, "income": 3200, "side": "Confederacy"},
+
+    # Mississippi
+    {"name": "Laurel", "position": {"x": 1665, "y": 1786}, "population": 5000, "income": 1500, "side": "Confederacy"},
+    {"name": "Bay St Louis", "position": {"x": 1640, "y": 1918}, "population": 3000, "income": 1200, "side": "Confederacy"},
+    {"name": "Columbus MS", "position": {"x": 1712, "y": 1632}, "population": 8000, "income": 1800, "side": "Confederacy"},
+    {"name": "Tupelo", "position": {"x": 1666, "y": 1532}, "population": 7000, "income": 1700, "side": "Confederacy"},
+    {"name": "Grenada", "position": {"x": 1572, "y": 1606}, "population": 5000, "income": 1400, "side": "Confederacy"},
+    {"name": "Oxford", "position": {"x": 1588, "y": 1520}, "population": 10000, "income": 2100, "side": "Confederacy"},
+    {"name": "Holly Springs", "position": {"x": 1608, "y": 1462}, "population": 4000, "income": 1300, "side": "Confederacy"},
+    {"name": "Vicksburg", "position": {"x": 1506, "y": 1722}, "population": 16000, "income": 2300, "side": "Confederacy"},
+    {"name": "Jackson MS", "position": {"x": 1564, "y": 1746}, "population": 15000, "income": 2400, "side": "Confederacy"},
+    {"name": "Corinth", "position": {"x": 1698, "y": 1438}, "population": 6000, "income": 1700, "side": "Confederacy"},
+    {"name": "Natchez", "position": {"x": 1454, "y": 1820}, "population": 14000, "income": 2200, "side": "Confederacy"},
+    {"name": "Meridian", "position": {"x": 1708, "y": 1716}, "population": 11000, "income": 2000, "side": "Confederacy"}
+
+    # Louisiana
+    {"name": "Lake Charles", "position": {"x": 1278, "y": 1956}, "population": 7000, "income": 2000, "side": "Confederacy"},
+    {"name": "Madison Parish", "position": {"x": 1460, "y": 1732}, "population": 4000, "income": 1300, "side": "Confederacy"},
+    {"name": "Thibodaux", "position": {"x": 1516, "y": 1978}, "population": 8000, "income": 1900, "side": "Confederacy"},
+    {"name": "Monroe", "position": {"x": 1402, "y": 1716}, "population": 6000, "income": 1600, "side": "Confederacy"},
+    {"name": "Lafayette", "position": {"x": 1406, "y": 1944}, "population": 10000, "income": 2200, "side": "Confederacy"},
+    {"name": "Natchitoches", "position": {"x": 1288, "y": 1804}, "population": 4000, "income": 1400, "side": "Confederacy"},
+    {"name": "Alexandria LA", "position": {"x": 1390, "y": 1834}, "population": 12000, "income": 2400, "side": "Confederacy"},
+    {"name": "Port Hudson", "position": {"x": 1450, "y": 1880}, "population": 5000, "income": 1500, "side": "Confederacy"},
+    {"name": "Shreveport", "position": {"x": 1240, "y": 1732}, "population": 14000, "income": 2500, "side": "Confederacy"},
+    {"name": "Baton Rouge", "position": {"x": 1478, "y": 1926}, "population": 22000, "income": 2800, "side": "Confederacy"},
+    {"name": "New Orleans", "position": {"x": 1592, "y": 1955}, "population": 70000, "income": 5000, "side": "Confederacy"},
+
+    # Texas
+    {"name": "Fort Towson", "position": {"x": 1118, "y": 1552}, "population": 3000, "income": 1100, "side": "Confederacy"},
+    {"name": "Fort Gibson", "position": {"x": 1102, "y": 1388}, "population": 4000, "income": 1200, "side": "Confederacy"},
+    {"name": "Tahlequah", "position": {"x": 1146, "y": 1320}, "population": 6000, "income": 1500, "side": "Confederacy"},
+    {"name": "Galveston", "position": {"x": 1142, "y": 2050}, "population": 14000, "income": 2200, "side": "Confederacy"},
+    {"name": "Houston", "position": {"x": 1134, "y": 1994}, "population": 20000, "income": 3000, "side": "Confederacy"},
+    {"name": "San Antonio", "position": {"x": 860, "y": 2004}, "population": 35000, "income": 4000, "side": "Confederacy"},
+    {"name": "Austin", "position": {"x": 980, "y": 1950}, "population": 22000, "income": 2800, "side": "Confederacy"},
+    {"name": "Brownsville", "position": {"x": 926, "y": 2378}, "population": 10000, "income": 2500, "side": "Confederacy"},
+    {"name": "Fort Worth", "position": {"x": 1000, "y": 1700}, "population": 12000, "income": 2300, "side": "Confederacy"},
+    {"name": "El Paso", "position": {"x": 134, "y": 1710}, "population": 8000, "income": 2000, "side": "Confederacy"}
+]
