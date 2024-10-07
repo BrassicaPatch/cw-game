@@ -128,7 +128,7 @@
     {"name": "Millville", "position": {"x": 2714, "y": 806}, "population": 8000, "income": 1600, "side": "Union"},
     {"name": "Newark", "position": {"x": 2758, "y": 652}, "population": 35000, "income": 3700, "side": "Union"},
     {"name": "Trenton", "position": {"x": 2718, "y": 710}, "population": 18000, "income": 2800, "side": "Union"},
- 
+
     {"name": "Dover", "position": {"x": 2695, "y": 848}, "population": 9000, "income": 1800, "side": "Union"},
     {"name": "Wilmington DE", "position": {"x": 2666, "y": 785}, "population": 16000, "income": 2700, "side": "Union"},
 
@@ -191,7 +191,7 @@
     {"name": "Beaufort", "position": {"x": 2378, "y": 1596}, "population": 10000, "income": 1800, "side": "Confederacy"},
     {"name": "Columbia", "position": {"x": 2322, "y": 1480}, "population": 12000, "income": 2500, "side": "Confederacy"},
     {"name": "Charleston SC", "position": {"x": 2460, "y": 1562}, "population": 30000, "income": 4000, "side": "Confederacy"},
-    
+
     {"name": "Baxley", "position": {"x": 2242, "y": 1736}, "population": 3000, "income": 1200, "side": "Confederacy"},
     {"name": "Statesboro", "position": {"x": 2264, "y": 1640}, "population": 5000, "income": 1500, "side": "Confederacy"},
     {"name": "Thomasville", "position": {"x": 2146, "y": 1825}, "population": 6000, "income": 1600, "side": "Confederacy"},

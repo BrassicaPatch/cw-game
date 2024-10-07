@@ -1,0 +1,49 @@
+{
+    "ui_panel": {
+        "default": {
+            "colours": {
+                "dark_bg": "rgba(120, 255, 255, 255)"
+            }
+        }
+        
+    },
+    "#transparent_panel": {
+        "colours": {
+            "dark_bg": "rgba(120, 120, 0, 0)"
+        }
+    },
+    "#large_textbox": {
+        "font": {
+            "name": "Arial",
+            "size": 72
+        },
+        "misc": {
+            "border_width": "0",
+            "shadow_width": "0",
+            "text_horiz_alignment": "center"
+        }
+    },
+    "#main_menu_label": {
+        "font": {
+            "name": "Arial",
+            "size": 32
+        },
+        "misc": {
+            "border_width": "1",
+            "shadow_width": "0",
+            "text_horiz_alignment": "center"
+        }
+    },
+    "#main_menu_input": {
+        "font": {
+            "name": "Arial",
+            "size": 24
+        },
+        "misc": {
+            "border_width": "1",
+            "shadow_width": "0",
+            "text_horiz_alignment": "center"
+        }
+    }
+
+}

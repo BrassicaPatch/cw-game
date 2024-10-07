@@ -1,0 +1,163 @@
+[
+    {
+        "name": "Washington DC",
+        "position": [
+            2569,
+            893
+        ]
+    },
+    {
+        "name": "New York City",
+        "position": [
+            2776,
+            628
+        ]
+    },
+    {
+        "name": "Philadelphia",
+        "position": [
+            2700,
+            749
+        ]
+    },
+    {
+        "name": "Boston",
+        "position": [
+            2958,
+            418
+        ]
+    },
+    {
+        "name": "Cincinnati",
+        "position": [
+            1994,
+            957
+        ]
+    },
+    {
+        "name": "St Louis",
+        "position": [
+            1532,
+            1054
+        ]
+    },
+    {
+        "name": "Richmond",
+        "position": [
+            2554,
+            1040
+        ]
+    },
+    {
+        "name": "Atlanta",
+        "position": [
+            2016,
+            1504
+        ]
+    },
+    {
+        "name": "Charleston SC",
+        "position": [
+            2435,
+            1582
+        ]
+    },
+    {
+        "name": "New Orleans",
+        "position": [
+            1588,
+            1955
+        ]
+    },
+    {
+        "name": "Vicksburg",
+        "position": [
+            1718,
+            1508
+        ]
+    },
+    {
+        "name": "Nashville",
+        "position": [
+            1822,
+            1275
+        ]
+    },
+    {
+        "name": "Mobiles",
+        "position": [
+            1754,
+            1864
+        ]
+    },
+    {
+        "name": "Louisville",
+        "position": [
+            1886,
+            1088
+        ]
+    },
+    {
+        "name": "Baltimore",
+        "position": [
+            2604,
+            858
+        ]
+    },
+    {
+        "name": "Knoxville",
+        "position": [
+            2090,
+            1258
+        ]
+    },
+    {
+        "name": "Memphis",
+        "position": [
+            1555,
+            1424
+        ]
+    },
+    {
+        "name": "Savannah",
+        "position": [
+            2362,
+            1672
+        ]
+    },
+    {
+        "name": "Petersburg",
+        "position": [
+            2565,
+            1060
+        ]
+    },
+    {
+        "name": "Monthomery",
+        "position": [
+            1890,
+            1682
+        ]
+    },
+    {
+        "name": "Fort Monroe",
+        "position": [
+            1664,
+            1040
+        ]
+    },
+    {
+        "name": "Chattanooga",
+        "position": [
+            1952,
+            1396
+        ]
+    },
+    {
+        "name": "Jackson",
+        "position": [
+            1560,
+            1730
+        ]
+    }
+]
