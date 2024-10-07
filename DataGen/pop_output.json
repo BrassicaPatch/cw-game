@@ -1,0 +1,695 @@
+[
+    {
+        "Washington DC": 75000
+    },
+    {
+        "Jonesboro": 1000
+    },
+    {
+        "Batesville": 1200
+    },
+    {
+        "Arkadelphia": 900
+    },
+    {
+        "Camden": 800
+    },
+    {
+        "Fayetteville": 2200
+    },
+    {
+        "Fort Smith": 2500
+    },
+    {
+        "Little Rock": 3500
+    },
+    {
+        "Fort Hindman": 500
+    },
+    {
+        "Helena": 1800
+    },
+    {
+        "West Plains": 600
+    },
+    {
+        "New Madrid": 1800
+    },
+    {
+        "Kirksville": 1300
+    },
+    {
+        "Neosho": 1100
+    },
+    {
+        "Springfield MO": 2800
+    },
+    {
+        "Lexington MO": 1900
+    },
+    {
+        "Kansas City": 4500
+    },
+    {
+        "Jefferson City": 2100
+    },
+    {
+        "Farmington": 1400
+    },
+    {
+        "Cape Girardeau": 2500
+    },
+    {
+        "St. Louis": 16000
+    },
+    {
+        "Olney": 900
+    },
+    {
+        "Danville": 2000
+    },
+    {
+        "Decatur": 2100
+    },
+    {
+        "Quincy": 3000
+    },
+    {
+        "Cairo": 2500
+    },
+    {
+        "Alton": 2600
+    },
+    {
+        "Springfield IL": 9000
+    },
+    {
+        "Chicago": 110000
+    },
+    {
+        "Fort Dodge": 800
+    },
+    {
+        "Mason City": 700
+    },
+    {
+        "Keokuk": 2800
+    },
+    {
+        "Council Bluffs": 2000
+    },
+    {
+        "Davenport": 6000
+    },
+    {
+        "Des Moines": 4000
+    },
+    {
+        "Pipestone": 400
+    },
+    {
+        "Alexandria MN": 300
+    },
+    {
+        "Duluth": 1000
+    },
+    {
+        "Mankato": 900
+    },
+    {
+        "Rochester": 800
+    },
+    {
+        "Winona": 2500
+    },
+    {
+        "St Paul": 10000
+    },
+    {
+        "Superior": 400
+    },
+    {
+        "Eau Claire": 1500
+    },
+    {
+        "La Crosse": 3200
+    },
+    {
+        "Prairie du Chien": 1100
+    },
+    {
+        "Janesville": 2500
+    },
+    {
+        "Milwaukee": 30000
+    },
+    {
+        "Madison": 6500
+    },
+    {
+        "Cookeville": 600
+    },
+    {
+        "Pulaski": 1200
+    },
+    {
+        "Jackson TN": 2300
+    },
+    {
+        "Franklin": 900
+    },
+    {
+        "Knoxville": 4500
+    },
+    {
+        "Chattanooga": 3500
+    },
+    {
+        "Memphis": 25000
+    },
+    {
+        "Nashville": 18000
+    },
+    {
+        "Barbourville": 700
+    },
+    {
+        "Prestonburg": 650
+    },
+    {
+        "Ashland": 900
+    },
+    {
+        "Paducah": 2200
+    },
+    {
+        "Frankfort": 1800
+    },
+    {
+        "Bowling Green": 2700
+    },
+    {
+        "Lexington KY": 14000
+    },
+    {
+        "Louisville": 68000
+    },
+    {
+        "Fort Wayne": 3100
+    },
+    {
+        "New Albany": 4000
+    },
+    {
+        "Evansville": 4500
+    },
+    {
+        "Indianapolis": 18000
+    },
+    {
+        "Kalamazoo": 2900
+    },
+    {
+        "Lansing": 2500
+    },
+    {
+        "Grand Rapids": 3400
+    },
+    {
+        "Detroit": 45000
+    },
+    {
+        "Marietta": 2200
+    },
+    {
+        "Dayton": 11000
+    },
+    {
+        "Columbus OH": 19000
+    },
+    {
+        "Cleveland": 43000
+    },
+    {
+        "Cincinnati": 115000
+    },
+    {
+        "Bradford": 900
+    },
+    {
+        "Scranton": 15000
+    },
+    {
+        "Chambersburg": 1800
+    },
+    {
+        "Pittsburgh": 49000
+    },
+    {
+        "Harrisburg": 13000
+    },
+    {
+        "Gettysburg": 1100
+    },
+    {
+        "Philadelphia": 565000
+    },
+    {
+        "Elmira": 3000
+    },
+    {
+        "Binghamton": 1700
+    },
+    {
+        "Poughkeepsie": 10000
+    },
+    {
+        "Buffalo": 81000
+    },
+    {
+        "Albany NY": 62000
+    },
+    {
+        "New York City": 815000
+    },
+    {
+        "Augusta": 3400
+    },
+    {
+        "Portland": 26500
+    },
+    {
+        "Portsmouth": 2100
+    },
+    {
+        "Concord": 3200
+    },
+    {
+        "Brattleboro": 1800
+    },
+    {
+        "Montpelier": 1500
+    },
+    {
+        "Pittsfield": 3600
+    },
+    {
+        "New Bedford": 23000
+    },
+    {
+        "Lowell": 36000
+    },
+    {
+        "Springfield MA": 15000
+    },
+    {
+        "Boston": 178000
+    },
+    {
+        "Providence": 50000
+    },
+    {
+        "Bridgeport": 16000
+    },
+    {
+        "New Haven": 39500
+    },
+    {
+        "Hartford": 29000
+    },
+    {
+        "Millville": 800
+    },
+    {
+        "Newark": 71000
+    },
+    {
+        "Trenton": 18000
+    },
+    {
+        "Dover": 3300
+    },
+    {
+        "Wilmington DE": 25000
+    },
+    {
+        "Easton": 4500
+    },
+    {
+        "Leonardtown": 700
+    },
+    {
+        "Hagerstown": 4000
+    },
+    {
+        "Frederick": 3400
+    },
+    {
+        "Baltimore": 220000
+    },
+    {
+        "Sutton": 600
+    },
+    {
+        "Lewisburg": 800
+    },
+    {
+        "Charleston WV": 1300
+    },
+    {
+        "Clarksburg": 2000
+    },
+    {
+        "Wheeling": 14500
+    },
+    {
+        "Harpers Ferry": 1200
+    },
+    {
+        "Danville": 1300
+    },
+    {
+        "Abingdon": 900
+    },
+    {
+        "Lynchburg": 6700
+    },
+    {
+        "Staunton": 3800
+    },
+    {
+        "Winchester": 4400
+    },
+    {
+        "Charlottesville": 2900
+    },
+    {
+        "Lexington VA": 2500
+    },
+    {
+        "Manassas": 1400
+    },
+    {
+        "Wytheville": 1000
+    },
+    {
+        "Norfolk": 14500
+    },
+    {
+        "Fredericksburg": 2600
+    },
+    {
+        "Petersburg": 18500
+    },
+    {
+        "Richmond": 38000
+    },
+    {
+        "Lumberton": 1100
+    },
+    {
+        "Asheville": 2000
+    },
+    {
+        "Shelby": 900
+    },
+    {
+        "Henderson": 1200
+    },
+    {
+        "Tarboro": 1400
+    },
+    {
+        "Weldon": 1000
+    },
+    {
+        "Salisbury": 1600
+    },
+    {
+        "Hickory": 800
+    },
+    {
+        "Kinston": 1100
+    },
+    {
+        "Elizabeth City": 2700
+    },
+    {
+        "Murphy": 600
+    },
+    {
+        "Goldsboro": 1500
+    },
+    {
+        "Greensboro": 2500
+    },
+    {
+        "Charlotte": 3500
+    },
+    {
+        "New Bern": 3300
+    },
+    {
+        "Wilmington NC": 9200
+    },
+    {
+        "Fayetteville": 2900
+    },
+    {
+        "Raleigh": 5600
+    },
+    {
+        "Georgetown": 1400
+    },
+    {
+        "Camden": 1700
+    },
+    {
+        "Aiken": 1300
+    },
+    {
+        "Sumter": 1600
+    },
+    {
+        "Orangeburg": 1100
+    },
+    {
+        "Spartanburg": 2000
+    },
+    {
+        "Greenville": 2400
+    },
+    {
+        "Anderson": 1800
+    },
+    {
+        "Cheraw": 1400
+    },
+    {
+        "Florence": 1200
+    },
+    {
+        "Beaufort": 1500
+    },
+    {
+        "Columbia": 5800
+    },
+    {
+        "Charleston SC": 38000
+    },
+    {
+        "Baxley": 1000
+    },
+    {
+        "Statesboro": 1100
+    },
+    {
+        "Thomasville": 1800
+    },
+    {
+        "Albany GA": 2000
+    },
+    {
+        "Griswoldville": 700
+    },
+    {
+        "Kingston": 800
+    },
+    {
+        "Milledgeville": 3600
+    },
+    {
+        "Dalton": 2200
+    },
+    {
+        "Columbus GA": 9400
+    },
+    {
+        "Macon": 8600
+    },
+    {
+        "Augusta": 10800
+    },
+    {
+        "Atlanta": 9500
+    },
+    {
+        "Savannah": 22500
+    },
+    {
+        "Marianna": 900
+    },
+    {
+        "Gainesville": 1200
+    },
+    {
+        "Cedar Key": 700
+    },
+    {
+        "St Augustine": 1600
+    },
+    {
+        "Jacksonville": 2400
+    },
+    {
+        "Tallahassee": 1900
+    },
+    {
+        "Pensacola": 3300
+    },
+    {
+        "Evergreen": 600
+    },
+    {
+        "Eufaula": 1700
+    },
+    {
+        "Gadsden": 1200
+    },
+    {
+        "Opelika": 1000
+    },
+    {
+        "Demopolis": 1400
+    },
+    {
+        "Talladega": 1500
+    },
+    {
+        "Birmingham": 800
+    },
+    {
+        "Huntsville": 2600
+    },
+    {
+        "Tuscaloosa": 4200
+    },
+    {
+        "Selma": 3600
+    },
+    {
+        "Montgomery": 7200
+    },
+    {
+        "Mobile": 29000
+    },
+    {
+        "Laurel": 700
+    },
+    {
+        "Bay St Louis": 800
+    },
+    {
+        "Columbus MS": 3200
+    },
+    {
+        "Tupelo": 900
+    },
+    {
+        "Grenada": 1100
+    },
+    {
+        "Oxford": 1400
+    },
+    {
+        "Holly Springs": 1300
+    },
+    {
+        "Vicksburg": 4300
+    },
+    {
+        "Jackson MS": 1500
+    },
+    {
+        "Corinth": 1200
+    },
+    {
+        "Natchez": 4500
+    },
+    {
+        "Meridian": 1000
+    },
+    {
+        "Lake Charles": 1200
+    },
+    {
+        "Madison Parish": 900
+    },
+    {
+        "Thibodaux": 1600
+    },
+    {
+        "Monroe": 1800
+    },
+    {
+        "Lafayette": 1300
+    },
+    {
+        "Natchitoches": 1000
+    },
+    {
+        "Alexandria LA": 1200
+    },
+    {
+        "Port Hudson": 600
+    },
+    {
+        "Shreveport": 2300
+    },
+    {
+        "Baton Rouge": 5200
+    },
+    {
+        "New Orleans": 170000
+    },
+    {
+        "Fort Towson": 500
+    },
+    {
+        "Fort Gibson": 600
+    },
+    {
+        "Tahlequah": 700
+    },
+    {
+        "Galveston": 5000
+    },
+    {
+        "Houston": 1500
+    },
+    {
+        "San Antonio": 3000
+    },
+    {
+        "Austin": 2200
+    },
+    {
+        "Brownsville": 1200
+    },
+    {
+        "Fort Worth": 800
+    },
+    {
+        "El Paso": 1000
+    }
+]
