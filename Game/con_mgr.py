@@ -8,32 +8,61 @@ import libclient
 
 class Connection_Manager:
 
-    def __init__(self):
-        self.sel
-        self.addr
-        self.sock
+    def __init__(self, ip):
+        self.sel = selectors.DefaultSelector()
+        self.addr = (ip, 65432)
+        self.sock = None
+        self.events = None
+
+    def create_request(action, name, value):
+        if action == "message":
+            return dict(
+                type="text/json",
+                encoding="utf-8",
+                content=dict(action=action, name=name, value=value),
+            )
+        else:
+            return dict(
+                type="binary/custom-client-binary-type",
+                encoding="binary",
+                content=bytes(action + value, encoding="utf-8"),
+            )
+
+    async def open_connection(self):
+        self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        self.sock.setblocking(False)
+        self.sock.connect_ex(self.addr)
+        self.events = selectors.EVENT_READ | selectors.EVENT_WRITE
+        self.sel.register(self.sock, self.events)
+
+        try:
+            while True:
+                events = self.sel.select(timeout=1)
+                for key, mask in events:
+                    message = key.data
+                    try:
+                        message.process_events(mask)
+                    except Exception:
+                        print(
+                            "main: error: exception for",
+                            f"{message.addr}:\n{traceback.format_exc()}",
+                        )
+                        message.close()
+                # Check for a socket being monitored to continue.
+                if not self.sel.get_map():
+                    break
+        except KeyboardInterrupt:
+            print("caught keyboard interrupt, exiting")
+        finally:
+            self.sel.close()
 
     async def send_message(ip, name, msg):
 
-        def create_request(action, name, value):
-            if action == "message":
-                return dict(
-                    type="text/json",
-                    encoding="utf-8",
-                    content=dict(action=action, name=name, value=value),
-                )
-            else:
-                return dict(
-                    type="binary/custom-client-binary-type",
-                    encoding="binary",
-                    content=bytes(action + value, encoding="utf-8"),
-                )
+        
 
-        sel = selectors.DefaultSelector()
 
         request = create_request('message', name, msg)
 
-        addr = (ip, 65432)
         print("starting connection to", addr)
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         sock.setblocking(False)

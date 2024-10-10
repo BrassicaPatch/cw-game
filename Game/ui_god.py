@@ -146,7 +146,8 @@ class UIGod:
                 print('Connecting...')
                 ip = self.ip_input.text
                 name = self.name_input.text
-                asyncio.run(Connection_Manager.send_message(ip, name, f'Hello! This is player {name}. Its great to connect :)'))
+                conn_mgr = Connection_Manager('localhost')
+                asyncio.run(conn_mgr.open_connection())
 
                 self.close_main_menu()
 
